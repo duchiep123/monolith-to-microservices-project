@@ -19,7 +19,7 @@ script:
 
 #Task to execute after the build process is successful
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo "Hiep123456789" | docker login -u "mrhiep" --password-stdin
   - docker push mrhiep/udagram-reverseproxy:v1
   - docker push mrhiep/udagram-api-feed:v1
   - docker push mrhiep/udagram-api-user:v1
