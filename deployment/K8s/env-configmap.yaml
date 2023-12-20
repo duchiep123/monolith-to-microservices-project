@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: tweets-bucket
+  AWS_PROFILE: duytta
+  AWS_REGION: us-east-1
+  JWT_SECRET: testing
+  POSTGRES_DB: tweetsdb
+  POSTGRES_HOST: tweetsdb.cypnuobvhc23.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100  
+metadata:
+  name: env-config
